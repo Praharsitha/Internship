@@ -1,0 +1,173 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10;
+    padding: 5;
+    display: flow-root;
+    min-height: 50vh; 
+    flex-direction: column;
+    background: #e3f9ff;
+  }
+  .section {
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px auto;
+     .about-image-container {
+        image-orientation: center;
+      }
+  }
+  
+  .skills-list,
+  .contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li,
+  .contact-list li {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-list li span {
+    margin-left: 10px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  /* Header Styles */
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    color: #333;
+  }
+  
+  .nav-toggle {
+    display: none; /* Hidden initially for larger screens */
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .nav-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 5px;
+  }
+  
+  .nav-toggle span:nth-child(2) {
+    margin-bottom: 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  @media screen and (max-width: 768px) {
+    .nav {
+      display: none; /* Hide navigation bar on smaller screens */
+    }
+  
+    .nav-toggle {
+      display: block; /* Show hamburger menu on smaller screens */
+    }
+  
+    .main {
+      flex: 1; /* Allow main content to fill remaining space */
+    }
+  
+    .section {
+      padding: 10px;
+    }
+  
+    .projects-container,
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .project,
+    .skill {
+      width: calc(50% - 10px);
+      margin-bottom: 10px;
+    }
+  
+    .about-image {
+      width: 150px;
+    }
+  }
+  
